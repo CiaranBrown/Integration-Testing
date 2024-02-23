@@ -25,3 +25,21 @@ test("Errors for invalid sign", () => {
 test("Can add string numbers", () => {
   equal(calculate("1", "+", "2"), 3);
 });
+
+test("calculator multiplies numbers and updates the page correctly", () => {
+    const aInput = document.querySelector("input[name='a']");
+    const signInput = document.querySelector("select");
+    const bInput = document.querySelector("input[name='b']");
+  
+    aInput.value = "2";
+    signInput.value = "*";
+    bInput.value = "3";
+  
+    const submitButton = document.querySelector("button[type='submit']");
+    submitButton.click();
+  
+    const result = document.querySelector("#result");
+    equal(result.textContent, "6");
+  
+    result.textContent = "";
+  });
