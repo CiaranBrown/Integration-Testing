@@ -1,2 +1,3 @@
-# Integration-Testing
-Founders &amp; Coders Workshop
+Founders & Coders Javascript Workshop Challenges
+
+Integration Testing workshop complete!
